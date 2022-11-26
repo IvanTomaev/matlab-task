@@ -18,5 +18,9 @@ rk = str2num(cell2mat(data(4)));
 g = 9.81;
 result = solution(m,r,x,y,z,v,a,xk,yk,zk,rk,g);
 
-
+if result
+    disp('Попадание')
+else
+    disp('Промах')
+end
 
